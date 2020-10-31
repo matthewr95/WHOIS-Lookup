@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Author: Matthew Riedle
-#Version: 1.0
+#Version: 2.0
 
 ##### VARIABLE DEFINING #####
 # The script needs to be executed as ./whoisLookup.sh whoisLookup.txt
@@ -14,7 +14,7 @@ whoisCount=1
 	IFS=$'\n' read -d '' -r -a list < $whoisFile
 
 	echo "WHOIS Lookup is starting."
-	echo "Number of search terms loaded for lookup: " ${#list[@]}
+#	echo "Number of search terms loaded for lookup: " ${#list[@]}
 		
 	for line in ${list[@]}; do
 
